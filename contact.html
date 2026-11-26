@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Mehebuba Parvin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav container">
+    <a class="logo" href="index.html">MP<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a class="active" href="contact.html">Contact</a></li></ul>
+  </nav></header>
+  <main class="container page">
+    <p class="eyebrow">LET'S CONNECT</p>
+    <h1 class="page-title">Contact <span>Me</span></h1>
+    <div class="contact-layout">
+      <section class="panel">
+        <h2>Contact Information</h2>
+        <p>If you would like to discuss my academic projects or connect with me, please use the email below.</p>
+        <p class="email-line">✉ <a href="mailto:mituparvin76@gmail.com">mituparvin76@gmail.com</a></p>
+        <p class="muted small">This portfolio does not publish a phone number or LinkedIn profile.</p>
+      </section>
+      <section class="panel">
+        <h2>Send a Message</h2>
+        <form id="contact-form">
+          <label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required>
+          <label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <fieldset><legend>Preferred contact method</legend><label class="choice"><input type="radio" name="method" value="Email" required> Email</label><label class="choice"><input type="radio" name="method" value="Other"> Other</label></fieldset>
+          <label for="subject">Subject</label><select id="subject" name="subject" required><option value="">Choose a subject</option><option>Project discussion</option><option>Academic inquiry</option><option>General message</option></select>
+          <label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <button class="btn primary" type="submit">Submit Message</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><p>© <span id="year"></span> Mehebuba Parvin</p><a href="index.html">Back to Home</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
